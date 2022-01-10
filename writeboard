@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+
+        <!-- 구글폰트 -->
+        <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+    <title>매일점심 글쓰기</title>
+        <style>
+            * {
+                font-family: "Stylish", sans-serif;
+            }
+            .container{
+                margin : auto ;
+                width : 800px;
+                height : 900px;
+                background-color: ghostwhite;
+            }
+            .writeboard-top{
+                margin : 30px auto;
+                width : 700px;
+                height : 50px;
+                /*background-color: beige;*/
+                border: black;
+                border-style: double;
+                text-align: center;
+            }
+            .writeboard-top-left{
+                margin : 30px 30px 0px 0px;
+                width : 100px;
+                height : 300px;
+
+            }
+            .writeboard-top-right{
+                margin : auto;
+                width : 100px;
+                height : 300px;
+            }
+            .col-img{
+                margin : auto;
+                width : 300px;
+                height : 300px;
+                text-align:center;
+                line-height:300px;
+                border-style: solid;
+
+            }
+            .input-title-col{
+                margin: 10px 30px 10px 20px;
+                width : 300px;
+                height : 90px;
+                text-align:center;
+                line-height:90px;
+                border-style: solid;
+            }
+            .row-content{
+                margin : 50px auto;
+                width : 700px;
+                height : 400px;
+                border-style: solid;
+                text-align:left;
+            }
+
+            .group-prepend{
+                margin: auto;
+                width : 70px;
+            }
+            .custom-select{
+                margin: auto;
+                width : 200px;
+            }
+
+        </style>
+
+        <script>
+
+
+        </script>
+
+</head>
+<body>
+
+<div class="container">
+
+      <div class="writeboard-top">
+        <h1 class="card-title">게시판 글쓰기</h1>
+            <div class="row">
+                <div class="col-img">
+                    1 여기에 이미지첨부
+                </div>
+                <div>
+                <div class="input-title-col">
+                    2 여기에 제목
+                </div>
+                <div class="input-title-col">
+                    3 여기에 작성자
+                </div>
+                    <div class="input-title-col">
+                        <div class="row">
+                            <div class="group-prepend">
+                                <label class="group-text" for="inputGroupSelect01">카테고리</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>-- 카테고리를 선택하세요 --</option>
+                                <option value="1">간편식</option>
+                                <option value="2">해장</option>
+                                <option value="3">직원</option>
+                                <option value="3">비오는날</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div class="row-content">
+              여기에 내용
+          </div>
+
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
