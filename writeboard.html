@@ -60,7 +60,7 @@
 
             }
             .input-title-col{
-                margin: 10px 30px 10px 20px;
+                margin: 0px 30px 10px 20px;
                 width : 300px;
                 height : 90px;
                 text-align:center;
@@ -75,18 +75,36 @@
                 text-align:left;
             }
 
-            .group-prepend{
-                margin: auto;
-                width : 70px;
-            }
+
             .custom-select{
                 margin: auto;
                 width : 200px;
+            }
+            textarea {
+                width: 100%;
+                height: 100%;
+                border: none;
+                resize: none;
+            }
+            input {
+                width: 100%;
+                height: 100%;
+                border: none;
+                resize: none;
+            }
+            .custom-select {
+                width: 100%;
+                height: 100%;
+                border: none;
+                resize: none;
             }
 
         </style>
 
         <script>
+            function success() {
+            alert('글쓰기 완료!');
+        }
 
 
         </script>
@@ -100,20 +118,20 @@
         <h1 class="card-title">게시판 글쓰기</h1>
             <div class="row">
                 <div class="col-img">
-                    1 여기에 이미지첨부
+                    <input type="file">
                 </div>
                 <div>
                 <div class="input-title-col">
-                    2 여기에 제목
+                    <input type="text" class ="form-control"placeholder="제목을 입력하세요"  aria-describedby="basic-addon1">
                 </div>
                 <div class="input-title-col">
                     3 여기에 작성자
                 </div>
                     <div class="input-title-col">
-                        <div class="row">
-                            <div class="group-prepend">
-                                <label class="group-text" for="inputGroupSelect01">카테고리</label>
-                            </div>
+
+<!--                            <div class="group-prepend">-->
+<!--                                <label class="group-text" for="inputGroupSelect01">카테고리</label>-->
+<!--                            </div>-->
                             <select class="custom-select" id="inputGroupSelect01">
                                 <option selected>-- 카테고리를 선택하세요 --</option>
                                 <option value="1">간편식</option>
@@ -121,14 +139,16 @@
                                 <option value="3">직원</option>
                                 <option value="3">비오는날</option>
                             </select>
-                        </div>
+
                     </div>
                 </div>
             </div>
           <div class="row-content">
-              여기에 내용
+              <textarea placeholder="내용을 입력해 주세요."></textarea>
           </div>
-
+          <button type="submit" onclick="success()" class="btn btn-primary">글쓰기</button>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <button type="submit" onclick = "location.href = '#메인페이지 연결' " class="btn btn-primary">메인페이지로 이동</button>
   </div>
 </div>
 
